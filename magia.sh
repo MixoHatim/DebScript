@@ -19,9 +19,9 @@ else
         #Descargando todo
         echo "Descargando todo, Ya casi estamos!"
         sleep 5s
-        sudo apt install Git -y
-        sudo apt install Nano -y
-        sudo apt install Vifm -y
+        sudo apt install git -y
+        sudo apt install nano -y
+        sudo apt install vifm -y
         sudo apt install xorg-xrandr -y
         sudo apt-get install curl -y
         curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
