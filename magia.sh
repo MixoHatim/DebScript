@@ -32,6 +32,21 @@ else
         sudo apt-get install curl -y
         curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
         sudo apt-get install speedtest -y
+        sudo apt-get install tty-clock -y
+        apt install libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool automake libiniparser-dev libsdl2-2.0-0 libsdl2-dev
+        git clone https://github.com/karlstav/cava.git
+        cd ./cava
+        ./autogen.sh
+        /configure
+        make
+        cd ~
+        wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+        chmod +x /usr/local/bin/oh-my-posh
+        mkdir ~/.poshthemes
+        wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
+        unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
+        chmod u+rw ~/.poshthemes/*.json
+        rm ~/.poshthemes/themes.zip
         echo " /-----------------------------\ "
         echo " /-----------------------------\ "
         echo " ----------TODO LISTO!---------- "
