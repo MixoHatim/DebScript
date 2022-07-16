@@ -3,26 +3,26 @@ if [[ $EUID -ne 0 ]]; then
    	echo "Usa el comando siendo Super Usuario (Root), o haz Sudo" 
    	exit 1
 else
-        #Actualizando el sistema
+        #Updating everything
         echo " /-----------------------------\ "
-        echo "Actualizando Ubuntu y todos sus paquetes"
+        echo "-------Updating"
         echo " \-----------------------------/ "
         sleep 5s
         sudo apt upgrade -y
         sudo apt update -y
         sleep 5s
-        #Añadiendo todos los repositorios
+        #Adding all the necesary repos
         echo " /-----------------------------\ "
-        echo "Añadiendo los repositorios necesarios"
+        echo "---Adding the repos"
         echo " \-----------------------------/ "
         sleep 5s
         sudo add-apt-repository http://archive.ubuntu.com/ubuntu -y
         sudo add-apt-repository ppa:nilarimogard/webupd8 -y
         sudo apt update -y
         sleep 5s
-        #Descargando todo
+        #Downloading
         echo " /-----------------------------\ "
-        echo "Descargando todo, Ya casi estamos!"
+        echo "--------Installing"
         echo " \-----------------------------/ "
         sleep 5s
         sudo apt install git -y
@@ -42,7 +42,7 @@ else
         cd ~
         echo " /-----------------------------\ "
         echo " /-----------------------------\ "
-        echo " ----------TODO LISTO!---------- "
+        echo " ----------Ready to use!---------- "
         echo " \-----------------------------/ "
         echo " \-----------------------------/ "
     fi
