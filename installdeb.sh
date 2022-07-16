@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ $EUID -ne 0 ]]; then
-   	echo "Usa el comando siendo Super Usuario (Root), o haz Sudo" 
+   	echo "Can't use the sript, are you sudoing?" 
    	exit 1
 else
         #Updating everything
