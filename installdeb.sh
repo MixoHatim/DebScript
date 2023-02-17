@@ -33,7 +33,7 @@ else
         curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
         sudo apt-get install speedtest -y
         sudo apt-get install tty-clock -y
-        apt install libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool automake libiniparser-dev libsdl2-2.0-0 libsdl2-dev
+        apt install libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool automake libiniparser-dev libsdl2-2.0-0 libsdl2-dev -y
         git clone https://github.com/karlstav/cava.git
         cd ./cava
         ./autogen.sh
